@@ -18,7 +18,7 @@ int main() {
 	}
 	{
 		int a, b, c;
-		cout << "Task 2.\nEnter 3 numbers a, b, c: ";
+		cout << "\nTask 2.\nEnter 3 numbers a, b, c: ";
 		cin >> a >> b >> c;
 		printf("A < B < C: ");
 		if (a < b && b < c) {
@@ -30,7 +30,7 @@ int main() {
 	}
 	{
 		int a, b;
-		cout << "Task 3.\nEnter a number: ";
+		cout << "\nTask 3.\nEnter a number: ";
 		cin >> a;
 		b = to_string(a).length();
 		printf("This number is 2-digit and even: ");
@@ -42,14 +42,14 @@ int main() {
 		}
 	}
 	{
-		printf("Task 4.\nEnter 3-digit number: ");
+		printf("\nTask 4.\nEnter 3-digit number: ");
 		int a;
 		do {
 			cin >> a;
 		} while (not(a >= 100 && a < 1000));
 		string num = to_string(a);
 		printf("Digits of this number are creating increasing or decreasing progression: ");
-		if ((stoi(to_string(num[0])) < stoi(to_string(num[1])) && stoi(to_string(num[1])) < stoi(to_string(num[2])) && stoi(to_string(num[2])) < stoi(to_string(num[3]))) || (stoi(to_string(num[0])) > stoi(to_string(num[1])) && stoi(to_string(num[1])) > stoi(to_string(num[2])) && stoi(to_string(num[2])) > stoi(to_string(num[3])))) {
+		if ((stoi(to_string(num[0])) < stoi(to_string(num[1])) && stoi(to_string(num[1])) < stoi(to_string(num[2]))) || (stoi(to_string(num[0])) > stoi(to_string(num[1])) && stoi(to_string(num[1])) > stoi(to_string(num[2])))) {
 			cout << "yes" << endl;
 		}
 		else {
@@ -57,7 +57,7 @@ int main() {
 		}
 	}
 	{
-		printf("Task 5.\nEnter 4-digit number: ");
+		printf("\nTask 5.\nEnter 4-digit number: ");
 		int a, b, d, num;
 		do {
 			cin >> a;
@@ -66,22 +66,22 @@ int main() {
 		d = 3;
 		num = 0;
 		while (b > 1) {
-			num += pow(10, d) * (b % 10);
+			num += int(pow(10, d) * (b % 10));
 			d -= 1;
 			b /= 10;
 		}
 		if (a == num)
 		{
-			printf("This is a palindrome.");
+			printf("This is a palindrome.\n");
 		}
 		else
 		{
-			printf("This is not a palindrome.");
+			printf("This is not a palindrome.\n");
 		}
 	}
 	{
 		int a, b, c;
-		cout << "Task 6.\n Enter 3 numbers a, b, c: ";
+		cout << "\nTask 6.\nEnter 3 numbers a, b, c (sides of triangle): ";
 		do {
 			cin >> a >> b >> c;
 		} while (not((a > 0 && b > 0 && c > 0)));
@@ -95,16 +95,16 @@ int main() {
 	}
 	{
 		int a, b, c;
-		cout << "Task 7.\n Enter a, b, c: ";
+		cout << "\nTask 7.\nEnter a, b, c (sides of triangle): ";
 		do {
 			cin >> a >> b >> c;
 		} while (not((a > 0 && b > 0 && c > 0)));
 		printf("Triangle with these sides exists: ");
 		if ((a + b > c) && (a + c > b) && (b + c > a)) {
-			cout << "yes";
+			cout << "yes\n";
 		}
 		else {
-			cout << "no";
+			cout << "no\n";
 		}
 	}
 }

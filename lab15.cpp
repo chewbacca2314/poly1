@@ -80,7 +80,7 @@ double Fact2(int n)
 int main()
 {
 	{
-		printf("Task 1.\n Enter five numbers: ");
+		printf("Task 1.\nEnter five numbers: ");
 		setlocale(LC_ALL, "Rus");
 		int num1, num2, num3, num4, num5;
 		scanf_s("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5);
@@ -94,13 +94,13 @@ int main()
 	{
 		double num1, num2;
 		int Sum;
-		printf("Task 2.\nEnter 2 float numbers: ");
+		printf("\nTask 2.\nEnter 2 float numbers: ");
 		scanf_s("%lf %lf", &num1, &num2);
 		Sum = Sign(num1) + Sign(num2);
 		printf("Sign(%.2f) + Sign(%.2f) = %d \n", num1, num2, Sum);
 	}
 	{
-		printf("Task 3.\nEnter R11, R12, R21, R22, R31, R32(R1 > R2): \n");
+		printf("\nTask 3.\nEnter R11, R12, R21, R22, R31, R32(R1 > R2): \n");
 		double r11, r21, r12, r22, r31, r32;
 		do {
 			scanf_s("%lf %lf %lf %lf %lf %lf", &r11, &r12, &r21, &r22, &r31, &r32);
@@ -108,22 +108,22 @@ int main()
 		double S1 = RingS(r11, r12);
 		double S2 = RingS(r21, r22);
 		double S3 = RingS(r31, r32);
-		printf("S1 = %.2f\nS2 = %.2f\nS3 = %.2f\n", S1, S2, S3);
+		printf("S1 between ring R11 and ring R12= %.2f\nS2  between ring R21 and ring R22 = %.2f\nS3 between ring R31 and ring R32 = %.2f\n", S1, S2, S3);
 	}
 	{
-		printf("Task 4.\n Enter coordinates (x1;y1), (x2;y2), (x3;y3) (x != 0, y != 0: \n");
+		printf("\nTask 4.\nEnter coordinates (x1;y1), (x2;y2), (x3;y3) (x != 0, y != 0): \n");
 		double x1, x2, x3, y1, y2, y3;
 		do {
 			scanf_s("%lf %lf %lf %lf %lf %lf", &x1, &y1, &x2, &y2, &x3, &y3);
 		} while (x1 == 0 || y1 == 0 || x2 == 0 || y2 == 0 || x3 == 0 || y3 == 0);
-		printf("Quarter 1: %f\nQuarter 2: %f\nQuarter 3: %f", Quarter(x1, y1), Quarter(x2, y2), Quarter(x3, y3));
+		printf("Quarter 1: %.1f\nQuarter 2: %.1f\nQuarter 3: %.1f", Quarter(x1, y1), Quarter(x2, y2), Quarter(x3, y3));
 	}
 	{
-		printf("Task 5.\n Enter N (N > 0): \n");
+		printf("\nTask 5.\nEnter N (N > 0): \n");
 		int n;
 		do {
 			scanf_s("%d", &n);
 		} while (n <= 0);
-		printf("Double factorial = %f\n", Fact2(n));
+		printf("Double factorial = %.1f\n", Fact2(n));
 	}
 }

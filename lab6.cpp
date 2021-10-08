@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	{
-		printf("Task 1.\n Enter 2 numbers to swap: \n");
+		printf("Task 1.\nEnter 2 numbers to swap: \n");
 		int a, b, c;
 		cout << "A: ";
 		cin >> a;
@@ -17,7 +17,7 @@ int main() {
 		cout << "After a, b: " << a << " " << b << endl;
 	}
 	{
-		printf("Task 2.\nEnter A, B, C to swap(A -> B, B -> C, C -> A): \n");
+		printf("\nTask 2.\nEnter A, B, C to swap(A -> B, B -> C, C -> A): \n");
 		int a, b, c;
 		cout << "A: ";
 		cin >> a;
@@ -31,7 +31,7 @@ int main() {
 		cout << "After A, B, C: " << a << " " << b << " " << c << endl;
 	}
 	{
-		printf("Task 3.\nEnter A, B, C to swap (A -> C, C -> B, B -> A): \n");
+		printf("\nTask 3.\nEnter A, B, C to swap (A -> C, C -> B, B -> A): \n");
 		int a, b, c;
 		cout << "A: ";
 		cin >> a;
@@ -45,45 +45,42 @@ int main() {
 		cout << "After A, B, C: " << a << " " << b << " " << c << endl;
 	}
 	{
-		printf("Task 4.\nEnter x: \n");
+		printf("\nTask 4.\nEnter x for \"y = 3x^6 - 6x^2 - 7\": \n");
 		int x, y;
 		cout << "x = ";
 		cin >> x;
 		y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
-		cout << "y = 3x^6 - 6x^2 - 7;\ny = " << y << endl;
+		cout << "y = " << y << endl;
 	}
 	{
-		printf("Task 5.\nEnter x: \n");
+		printf("\nTask 5.\nEnter x for \"4(x-3)^6 - 7(x-3)^3 + 2\": \n");
 		int x, y;
 		cout << "x = ";
 		cin >> x;
 		y = 4 * pow((x - 3), 6) - 7 * pow((x - 3), 3) + 2;
-		cout << "4(x-3)^6 - 7(x-3)^3 + 2\ny = " << y << endl;
+		cout << "y = " << y << endl;
 	}
 	{
-		printf("Task 6.\nEnter number to count number^8: ");
-		int a, b, c;
+		printf("\nTask 6.\nEnter number to count number^8: \n");
+		int a, b;
 		cout << "a = ";
 		cin >> a;
-		c = a * a; // c = 2
-		b = c; // b = 2
-		c = c * b; // c = 4
-		b = c; // b = 4
-		c = c * b; // c = 8
-		cout << "a = " << c;
+		b = a * a;
+		b = b * b;
+		b = b * b;
+		cout << "a = " << b;
 	}
 	{
-		printf("Task 7.\nEnter number to count number^15: ");
-		int a, b, c, d;
+		printf("\nTask 7.\nEnter number to count number^15: \n");
+		int a, b, d;
 		cout << "a = ";
 		cin >> a;
-		c = a * a * a; //c =  3
-		b = c; // b = 3
-		d = c; // d = 3
-		c = c * b; // c = 6
-		b = c; // b = 6
-		c = c * b; // c = 12
-		c = c * d; // c = 15
-		cout << "a = " << c;
+		b = a * a * a; // b = 3
+		d = b; // d = 3
+		a = b * b; // c = 6
+		b = a; // b = 6
+		a = a * b; // c = 12
+		a = a * d; // c = 15
+		cout << "a = " << a << endl;
 	}
 }

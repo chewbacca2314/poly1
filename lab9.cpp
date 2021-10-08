@@ -5,13 +5,13 @@ using namespace std;
 int main() {
 	{
 		int t;
-		cout << "Task 1.\nSeconds in day: ";
+		cout << "Task 1.\nSeconds in day ( <86400 ): ";
 		cin >> t;
 		cout << "Seconds after last minute: " << t % 60 << endl;
 	}
 	{
 		int n;
-		cout << "Task 2.\nDay of the year: ";
+		cout << "\nTask 2.\nDay of the year ( <= 365 ): ";
 		do {
 			cin >> n;
 		} while (not((n >= 1) && (n <= 365)));
@@ -19,24 +19,24 @@ int main() {
 	}
 	{
 		int n, k;
-		cout << "Task 3\nDay of the year: ";
+		cout << "\nTask 3\nDay of the year: ";
 		do {
 			cin >> n;
 		} while (not((n >= 1) && (n <= 365)));
-		cout << "1st jan is ";
+		cout << "1st jan is (# of the day of the week): ";
 		cin >> k;
 		cout << "Day of the week: " << 6 - n % 7 + k << endl;
 	}
 	{
 		int a, b, c;
-		cout << "Task 4.\nEnter a, b, c ( > 0 ) : ";
+		cout << "\nTask 4.\nEnter a, b(sides of rectangle), c(side of square in AB rectangle) ( > 0 ) : ";
 		cin >> a >> b >> c;
 		cout << "Squares count: " << a * b / (c*c) << endl << "Remaining square: " << a * b % (c*c) << endl;
 	}
 	{
 		int y;
 		string y2;
-		cout << "Task 5.\nNumber of year: ";
+		cout << "\nTask 5.\nNumber of year: ";
 		do {
 			cin >> y;
 		} while (y < 0);

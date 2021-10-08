@@ -5,9 +5,10 @@ using namespace std;
 
 int main() {
 	{
+		printf("Task 1.\n");
 		int a, b;
 		string s = "";
-		cout << "Enter numbers a, b: ";
+		cout << "Enter numbers a, b (a < b): ";
 		do {
 			cin >> a >> b;
 		} while (a > b);
@@ -19,22 +20,24 @@ int main() {
 		cout << "s: " << s << endl;
 	}
 	{
+		printf("\nTask 2.\n");
 		int a, b, count;
 		count = 0;
 		string s = "";
-		cout << "Enter numbers a, b: ";
+		cout << "Enter numbers a, b (a > b): ";
 		do {
 			cin >> a >> b;
 		} while (a < b);
 		int b2 = b;
-		for (a, b; a - b > 0; b += b) {
+		for (a, b; a - b >= 0; b += b) {
 			count += 1;
 		}
-		cout << "remaining: " << a - b2 * count << endl;
+		cout << "remaining length of a: " << a - b2 * count << endl;
 	}
 	{
+		printf("\nTask 3.\n");
 		int n, k;
-		cout << "enter n: ";
+		cout << "enter n (n > 1): ";
 		do {
 			cin >> n;
 		} while (n <= 1);
@@ -46,23 +49,24 @@ int main() {
 				Sum += i;
 			}
 		}
-		cout << k << endl;
+		printf("Coef. K = %d\nSumm is %d", k, Sum);
 	}
 	{
+		printf("\n\nnTask 4.\n");
 		double start = 1000;
 		double p;
 		int k = 0;
-		cout << "enter %: ";
+		cout << "Start summ is 1000\nEnter %: ";
 		do {
 			cin >> p;
 		} while (p < 0 && p > 25);
 		for (start; start < 1100; start *= (1 + p / 100)) {
 			k += 1;
 		}
-		cout << k << endl;
+		cout << "After " << k << " months summ will be >1100" << endl;
 	}
 	{
-		printf("Task 5.\nEnter A, B: ");
+		printf("\nTask 5.\nEnter A, B: ");
 		int a, b;
 		scanf_s("%d %d", &a, &b);
 		while (max(a, b) % min(a, b) != 0)
@@ -76,10 +80,10 @@ int main() {
 				b = b % a;
 			}
 		}
-		printf("%d\n", min(a, b));
+		printf("NOD is %d\n", min(a, b));
 	}
 	{
-		printf("Task 6.\n Enter N (N > 1, N - Fibonacci): ");
+		printf("\nTask 6.\nEnter N (N > 1, N - Fibonacci): ");
 		int n, k = 1;
 		do
 		{
@@ -106,7 +110,7 @@ int main() {
 				break;
 			}
 		}
-		printf("%d", k);
+		printf("The count of this Fibonacci number is %d\n", k);
 	}
 	return 0;
 }

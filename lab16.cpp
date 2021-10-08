@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	{
-		printf("Task 1.\nEnter N (N > 0): \n");
+		printf("Task 1.\nEnter N (N > 0): ");
 		int n;
 		scanf_s("%d", &n);
 		int* numbers = new int[n+1];
@@ -17,7 +17,7 @@ int main()
 		}
 	}
 	{
-		printf("\nTask 2.\nEnter N, A, D (N > 1): \n");
+		printf("\nTask 2.\nEnter N, A, D (N > 1): ");
 		int n, a, d;
 		do
 		{
@@ -31,7 +31,7 @@ int main()
 		}
 	}
 	{
-		printf("\nTask 3.\nEnter N, A, B (N > 2): \n");
+		printf("\nTask 3.\nEnter N, A, B (N > 2): ");
 		int n, a, b, Sum;
 		do 
 		{
@@ -51,11 +51,9 @@ int main()
 		}
 	}
 	{
-		printf("Task 4.\nEnter A, N (N > 0): \n");
+		printf("Task 4.\nEnter N (N > 0): ");
 		int n;
-		string a;
 		do {
-			cin >> a;
 			scanf_s("%d", &n);
 		} while (n <= 0);
 		int count = 0;
@@ -72,11 +70,9 @@ int main()
 		}
 	}
 	{
-		printf("\nTask 5.\nEnter A, N: \n");
+		printf("\nTask 5.\nEnter N: ");
 		int n, count = 0;
-		string a;
 		do {
-			cin >> a;
 			scanf_s("%d", &n);
 		} while (n < 0);
 		int* numbers = new int[n];

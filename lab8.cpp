@@ -11,7 +11,7 @@ int main() {
 		cout << "Size of file in kilobytes: " << b / 1024 << endl;
 	}
 	{
-		printf("Task 2.\nEnter A, B (A > B): \n");
+		printf("\nTask 2.\nEnter A, B (A > B): \n");
 		int a, b;
 		do {
 			cin >> a >> b;
@@ -19,15 +19,15 @@ int main() {
 		cout << "B in A: " << a / b << endl;
 	}
 	{
-		printf("Task 3.\nEnter A, B (A > B): \n");
+		printf("\nTask 3.\nEnter A, B (A > B): \n");
 		int a, b;
 		do {
 			cin >> a >> b;
 		} while (a < b);
-		cout << "\nRemaining distance in A: " << a%b << endl;
+		cout << "Remaining distance in A: " << a%b << endl;
 	}
 	{
-		printf("Task 4.\nEnter a number (10 <= n < 100) to swap: ");
+		printf("\nTask 4.\nEnter a number (10 <= n < 100) to swap: ");
 		int num;
 		do {
 			cin >> num;
@@ -39,10 +39,10 @@ int main() {
 		else {
 			swap(num2[0], num2[1]);
 		}
-		cout << "\nBefore: " << num << "\nAfter: " << num2 << endl;
+		cout << "Before: " << num << "\nAfter: " << num2 << endl;
 	}
 	{
-		printf("Task 5.\nEnter a number (100 <= n < 1000): ");
+		printf("\nTask 5.\nEnter a number (100 <= n < 1000): ");
 		int num;
 		do {
 			cin >> num;
@@ -58,6 +58,6 @@ int main() {
 				num2 = num2[1] + num2[2];
 			}
 		}
-		cout << "\nBefore: " << num << "\nAfter: " << num2 << endl;
+		cout << "Before: " << num << "\nAfter: " << num2 << endl;
 	}
 }

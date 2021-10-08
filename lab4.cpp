@@ -2,9 +2,8 @@
 using namespace std;
 
 int main() {
-	float a;
-	float b;
-	cout << "Task 1.\nEnter sides: " << endl;
+	float a, b;
+	cout << "Task 1.\nEnter sides: \n";
 	cout << "a = ";
 	cin >> a;
 	cout << "b = ";
@@ -40,9 +39,9 @@ int main() {
 	float dif = x * x - y * y;
 	float mult = y * y * x * x;
 	float div = (x * x) / (y * y);
-	cout << "sum of squares = " << sum << endl << "dif of squares = " << dif << endl << "mult of squares = " << mult << endl << "div of squares = " << div << endl;
+	cout << "Sum of squares = " << sum << endl << "Dif of squares = " << dif << endl << "Mult of squares = " << mult << endl << "Div of squares = " << div << endl;
 	cout << "Task 5.\nEnter 2 numbers: \n" << endl;
-	x = 0;
+	x = 0;	
 	y = 0;
 	while (x == 0) {
 		cout << "x = ";
@@ -56,5 +55,5 @@ int main() {
 	dif = abs(x) - abs(y);
 	mult = abs(x) * abs(y);
 	div = abs(x) / abs(y);
-	cout << "sum of modules = " << sum << endl << "dif of modules = " << dif << endl << "mult of modules = " << mult << endl << "div of modules = " << div << endl;
+	cout << "Sum of modules = " << sum << endl << "Dif of modules = " << dif << endl << "Mult of modules = " << mult << endl << "Div of modules = " << div << endl;
 }

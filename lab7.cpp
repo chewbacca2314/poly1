@@ -9,22 +9,27 @@ int main() {
 		printf("Task 1.\n");
 		int a;
 		do {
-			cout << "Enter angle in degrees: ";
+			cout << "Enter angle in degrees (0 < a < 360): ";
 			cin >> a;
 		} while (not((a > 0) && (a < 360)));
-		cout << "Angle = " << double(a) / double((180 / M_PI)) << endl;
+		cout << "Angle in rad = " << double(a) / double((180 / M_PI)) << endl;
 	}
 	{
-		printf("Task 2.\n");
-		int a;
-		do {
-			cout << "Enter angle in rad: ";
-			cin >> a;
-		} while (not((a > 0) && (a < M_PI*2)));
-		cout << "Angle = " << double(a) * 180 / M_PI << endl;
+		printf("\nTask 2.\n");
+		double a;
+		cout << "Enter angle in rad (0 < a < 2*pi): ";
+		cin >> a;
+		if (double(a) >= 6.28)
+		{
+			printf("Why?...\n");
+		}
+		else
+		{
+			cout << "Angle in degrees = " << double(a) * 180 / M_PI << endl;
+		}
 	}
 	{
-		printf("Task 3.\n");
+		printf("\nTask 3.\n");
 		int x, y, a1, a2;
 		cout << "How many kg of sweets #1?: \n";
 		cin >> x;
@@ -36,32 +41,28 @@ int main() {
 		cout << "Total price of sweets #2 is " << a2 << endl;
 	}
 	{
-		printf("Task 4.\n");
+		printf("\nTask 4.\n");
 		int v1, v2, s1, t;
-		cout << "Enter speed of first car, second car, distance and time: \n";
+		cout << "Enter speed (km/h) of first car, second car, distance (km) and time (h): \n";
 		cin >> v1 >> v2 >> s1 >> t;
 		cout << "Distance after t hours: " << (v1 + v2) * t + s1 << endl;
 	}
 	{
-		printf("Task 5.\nEnter coef. a, b for \"A*x+B=0\": \n");
+		printf("\nTask 5.\nEnter coef. A, B for \"A*x+B=0\": \n");
 		int a, b;
 		do {
 			scanf_s("%d %d", &a, &b);
 		} while (a == 0);
-		int x = -b / a;
-		printf("x is %d", x);
+		double x = double(-b) / a;
+		printf("x is %.2f\n", x);
 	}
 	{
-		printf("Task 6.\nCounting system: \nA1*x+B1*y=C1\nA2*x+B2*y=C2\n");
-		int a1, a2, b1, b2, c1, c2, x, y;
-		a1 = 2;
-		a2 = 3;
-		b1 = 4;
-		b2 = 5;
-		c1 = 6;
-		c2 = 8;
+		printf("\nTask 6.\nCounting system: \nA1*x+B1*y=C1\nA2*x+B2*y=C2\n");
+		double a1, a2, b1, b2, c1, c2, x, y;
+		printf("Enter coefficients for A1, A2, B1, B2, C1, C2: \n");
+		scanf_s("%lf %lf %lf %lf %lf %lf", &a1, &a2, &b1, &b2, &c1, &c2);
 		x = (b1 * c2 - b2 * c1) / (a1 * b2 + a2 * b1);
 		y = (c2 - a2 * x) / b2;
-		cout << "x = " << x << "y = " << y;
+		printf("x = %.2f, y = %.2f\n", x, y);
 	}
 }
