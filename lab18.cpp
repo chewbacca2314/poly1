@@ -105,13 +105,13 @@ int main()
 		int Max = INT_MIN;
 		for (int i = 0; i < n; i++)
 		{
-			printf("arr[%d] vs %d\n", i + 1, Max);
+			//printf("arr[%d] vs %d\n", i + 1, Max);
 			if (arr[i] > Max)
 			{
 				imax = i;
 				Max = arr[i];
 			}
-			printf("arr[%d] vs %d\n", i + 1, Min);
+			//printf("arr[%d] vs %d\n", i + 1, Min);
 			if (arr[i] < Min)
 			{
 				imin = i;
@@ -125,7 +125,7 @@ int main()
 				arr[i] = 0;
 			}
 		}
-		printf("\n\nMin = %d, Max = %d, imin = %d, imax = %d\n\n", Min, Max, imin, imax);
+		//printf("\n\nMin = %d, Max = %d, imin = %d, imax = %d\n\n", Min, Max, imin, imax);
 		printArray(arr, n, "after");
 	}
 	{

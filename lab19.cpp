@@ -21,7 +21,7 @@ void printArray(int* arr, int size)
 
 int main()
 {
-	{
+	/*{
 		printf("Task 1.\nEnter a size and array: ");
 		int size, count = 0;
 		scanf_s("%d", &size);
@@ -80,7 +80,7 @@ int main()
 		printArray(array, size - countdelete);
 		printf("\n");
 		delete[]array;
-	}
+	}*/
 	{
 		printf("\nTask 3.\nEnter a size and array: ");
 		int size;
@@ -123,7 +123,7 @@ int main()
 			if (i == imax)
 			{
 				int j = size - 1;
-				while (j > imax + 1)
+				while (j > imax + 2)
 				{
 					swap(array[j], array[j - 1]);
 					j--;
@@ -135,7 +135,7 @@ int main()
 		printf("\n");
 		delete[]array;
 	}
-	{
+	/*{
 		printf("\nTask 4.\nEnter a size and array: ");
 		int size;
 		scanf_s("%d", &size);
@@ -213,5 +213,5 @@ int main()
 		printArray(array2, size);
 		printf("\n");
 		delete[]array;
-	}
+	}*/
 }
