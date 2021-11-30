@@ -108,7 +108,11 @@ int main()
 		double S1 = RingS(r11, r12);
 		double S2 = RingS(r21, r22);
 		double S3 = RingS(r31, r32);
+<<<<<<< HEAD
 		printf("S1 between ring R11 and ring R12 = %.2f\nS2 between ring R21 and ring R22 = %.2f\nS3 between ring R31 and ring R32 = %.2f\n", S1, S2, S3);
+=======
+		printf("S1 between ring R11 and ring R12= %.2f\nS2  between ring R21 and ring R22 = %.2f\nS3 between ring R31 and ring R32 = %.2f\n", S1, S2, S3);
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 	}
 	{
 		printf("\nTask 4.\nEnter coordinates (x1;y1), (x2;y2), (x3;y3) (x != 0, y != 0): \n");
@@ -116,10 +120,17 @@ int main()
 		do {
 			scanf_s("%lf %lf %lf %lf %lf %lf", &x1, &y1, &x2, &y2, &x3, &y3);
 		} while (x1 == 0 || y1 == 0 || x2 == 0 || y2 == 0 || x3 == 0 || y3 == 0);
+<<<<<<< HEAD
 		printf("Quarter 1: %.0f\nQuarter 2: %.0f\nQuarter 3: %.0f", Quarter(x1, y1), Quarter(x2, y2), Quarter(x3, y3));
 	}
 	{
 		printf("\n\nTask 5.\nEnter N (N > 0): \n");
+=======
+		printf("Quarter 1: %.1f\nQuarter 2: %.1f\nQuarter 3: %.1f", Quarter(x1, y1), Quarter(x2, y2), Quarter(x3, y3));
+	}
+	{
+		printf("\nTask 5.\nEnter N (N > 0): \n");
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		int n;
 		do {
 			scanf_s("%d", &n);

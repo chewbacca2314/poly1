@@ -23,12 +23,16 @@ int main() {
 		do {
 			cin >> n;
 		} while (n <= 0);
+<<<<<<< HEAD
 		cout << "Mult of " << n << " numbers(";
 		for (int i = 1; i < n; i++)
 		{
 			printf("1.%d*", i);
 		}
 		printf("1.%d) = ", n);
+=======
+		cout << "Mult of " << n << " numbers (1.1*1.2*1.3*...*n): ";
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		for (int i = 0; i <= n; i++) {
 			mult *= 1 + double(i) / 10;
 		}
@@ -54,18 +58,26 @@ int main() {
 		printf("\nTask 4.\nEnter A, N(N>0): ");
 		do
 		{
+<<<<<<< HEAD
 			scanf_s("%lf %d", &a, &n);
+=======
+			scanf_s("%lf %i", &a, &n);
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		} while (n < 0);
 		for (int i = 0; i <= n; i++)
 		{
 			sum += pow(a, i);
 		}
+<<<<<<< HEAD
 		printf("Sum of 1 + ");
 		for (int i = 1; i < n; i++)
 		{
 			printf("%.0f^%d + ", a, i);
 		}
 		printf("%.0f^%d is %.2f\n ", a, n, sum);
+=======
+		printf("Sum of 1 + A^1 + A^2 + ... + A^%d is %.2f\n", n, sum);
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 	}
 	{
 		printf("\nTask 5.\nEnter A, N(N>0): ");
@@ -79,6 +91,10 @@ int main() {
 		{
 			sum += pow((-1), i) * pow(a, i);
 		}
+<<<<<<< HEAD
 		printf("Sum of 1 - A^1 + A^2 - ... +- A^%d is %.2f\n", n, sum);
+=======
+		printf("Sum of 1 - A^1 + A^2 + ... +- A^%d is %.2f\n", n, sum);
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 	}
 }

@@ -110,7 +110,11 @@ int main() {
 				break;
 			}
 		}
+<<<<<<< HEAD
 		printf("The index of this Fibonacci number is %d\n", k);
+=======
+		printf("The count of this Fibonacci number is %d\n", k);
+>>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 	}
 	return 0;
 }
