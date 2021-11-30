@@ -51,11 +51,7 @@ int main()
 		}
 	}
 	{
-<<<<<<< HEAD
 		printf("\nTask 4.\nEnter N (N > 0): ");
-=======
-		printf("Task 4.\nEnter N (N > 0): ");
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		int n;
 		do {
 			scanf_s("%d", &n);

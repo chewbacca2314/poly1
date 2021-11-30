@@ -1,9 +1,5 @@
 #include <iostream>
 #include <string>
-<<<<<<< HEAD
-=======
-#include <typeinfo>
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 using namespace std;
 
 int main() {
@@ -158,7 +154,6 @@ int main() {
 		cout << s << endl;
 	}
 	{
-<<<<<<< HEAD
 		printf("\nTask 2.\nEnter C - starting location (N, W, S, E), N - where to move (-1, 0, 1): ");
 		char c1;
 		int n;
@@ -202,11 +197,6 @@ int main() {
 		int a;
 		string s2 = "", s1 = "", s3 = "";
 		cout << "\n\nTask 3.\nEnter a number (10 <= n <= 40): ";
-=======
-		int a;
-		string s2 = "", s1 = "";
-		cout << "Task 3.\nEnter a number (10 <= n <= 40): ";
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		do {
 			cin >> a;
 		} while (not(a >= 10 && a <= 40));
@@ -249,7 +239,6 @@ int main() {
 		else {
 			switch (to_string(a)[0] - '0') {
 			case 2:
-<<<<<<< HEAD
 				s1 += "двадцать";
 				break;
 			case 3:
@@ -257,18 +246,11 @@ int main() {
 				break;
 			case 4:
 				s1 += "сорок";
-=======
-				s1 += "двадцать ";
-				break;
-			case 3:
-				s1 += "тридцать ";
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 				break;
 			default:
 				break;
 			}
 			switch (to_string(a)[1] - '0') {
-<<<<<<< HEAD
 			case 0:
 				s1 += "";
 				break;
@@ -298,40 +280,11 @@ int main() {
 				break;
 			case 9:
 				s1 += " дев€ть";
-=======
-			case 1:
-				s1 += "одно";
-				break;
-			case 2:
-				s1 += "два";
-				break;
-			case 3:
-				s1 += "три";
-				break;
-			case 4:
-				s1 += "четыре";
-				break;
-			case 5:
-				s1 += "п€ть";
-				break;
-			case 6:
-				s1 += "шесть";
-				break;
-			case 7:
-				s1 += "семь";
-				break;
-			case 8:
-				s1 += "восемь";
-				break;
-			case 9:
-				s1 += "дев€ть";
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 				break;
 			default:
 				break;
 			}
 		}
-<<<<<<< HEAD
 		if (s1[s1.length() - 1] == 'о') {
 			s2 += "учебное задание";
 		}
@@ -348,24 +301,6 @@ int main() {
 	{
 		int num;
 		cout << "\nTask 4.\nEnter a number (100 <= n < 1000): ";
-=======
-		if (s1[-1] == 'o') {
-			s2 += " учебное задание ";
-		}
-		else {
-			if (s1[-1] == 'а' || s1[-1] == 'е') {
-				s2 += " учебных задани€ ";
-			}
-			else {
-				s2 += " учебных заданий ";
-			}
-		}
-		cout << s1 << " " << s2 << endl;
-	}
-	{
-		int num;
-		cout << "Task 4.\nEnter a number (100 <= n < 1000): ";
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 		do {
 			cin >> num;
 		} while (num < 100 && num >= 1000);
@@ -511,7 +446,6 @@ int main() {
 	}
 	{
 		int y;
-<<<<<<< HEAD
 		string col[5]{ "зелен", "красн", "желт", "бел", "черн" };
 		string an[12]{ "крысы", "коровы", "тигра", "зайца", "дракона", "змеи", "лошади", "овцы", "обезь€ны", "курицы", "собаки", "свиньи" };
 		cout << "\nTask 5.\nEnter a year: ";
@@ -535,14 +469,5 @@ int main() {
 			break;
 		}
 		cout << "год " << s1 << " " << an[(y - int(y / 60) * 60) % 12] << endl;
-=======
-		string col[5]{ "зеленый", "красный", "желтый", "белый", "черный" };
-		string an[12]{ "крыса", "корова", "тигр", "за€ц", "дракон", "зме€", "лошадь", "овца", "обезь€на", "курица", "собака", "свинь€" };
-		cout << "Task 5.\nEnter a year: ";
-		do {
-			cin >> y;
-		} while (y <= 0);
-		cout << "год " << col[int(y - int(y / 60) * 60) / 12] << " " << an[(y - int(y / 60) * 60) % 12] << endl;
->>>>>>> 5634047519ec732a46adaa53871984095d1be83c
 	}
 }
